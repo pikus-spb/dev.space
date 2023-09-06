@@ -1,17 +1,17 @@
 <mat-sidenav-container>
     <mat-sidenav opened mode="side" class="main-menu-container">
-        <button mat-stroked-button color="primary">
+        <a mat-button routerLink="/home" routerLinkActive="mat-primary">
             <mat-icon>home</mat-icon>
             Home
-        </button>
-        <button mat-stroked-button>
+        </a>
+        <a mat-button routerLink="/links" routerLinkActive="mat-primary">
             <mat-icon>link</mat-icon>
             Links
-        </button>
-        <button mat-stroked-button>
+        </a>
+        <a mat-button routerLink="/about" routerLinkActive="mat-primary">
             <mat-icon>person</mat-icon>
             About
-        </button>
+        </a>
     </mat-sidenav>
     <mat-sidenav-content class="main-container">
         <router-outlet></router-outlet>

@@ -7,10 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './home/home.component';
+import { LinksComponent } from './links/links.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LinksComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
