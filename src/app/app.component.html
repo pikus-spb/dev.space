@@ -1,2 +1,19 @@
-<img src="assets/images/angular.png">
-<h1> Hello from Angular {{version}}</h1>
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side" class="main-menu-container">
+        <button mat-stroked-button color="primary">
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+        <button mat-stroked-button>
+            <mat-icon>link</mat-icon>
+            Links
+        </button>
+        <button mat-stroked-button>
+            <mat-icon>person</mat-icon>
+            About
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content class="main-container">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
