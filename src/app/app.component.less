@@ -14,6 +14,13 @@
       width: calc(@mainMenuWidth - 2 * @defaultPadding - @defaultBorderWidth);
       justify-content: flex-start;
       margin: 5px 0;
+      padding-left: 20px;
+
+      &.active {
+        backdrop-filter: brightness(95%);
+        border-left: 3px solid gray;
+        padding-left: 17px;
+      }
     }
   }
 
