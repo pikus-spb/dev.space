@@ -1,5 +1,8 @@
 <mat-sidenav-container>
-    <mat-sidenav opened mode="side" class="main-menu-container">
+    <mat-sidenav #sidenav opened mode="side">
+        <button mat-icon-button (click)="sidenav.close()" [hidden]="!sidenav.opened" title="Close menu">
+            <mat-icon>arrow_left</mat-icon>
+        </button>
         <a mat-button routerLink="/home" routerLinkActive="active">
             <mat-icon>home</mat-icon>
             Home
@@ -13,7 +16,10 @@
             About
         </a>
     </mat-sidenav>
-    <mat-sidenav-content class="main-container">
+    <mat-sidenav-content>
         <router-outlet></router-outlet>
+        <button mat-icon-button (click)="sidenav.open()" [hidden]="sidenav.opened" title="Open menu">
+            <mat-icon>menu</mat-icon>
+        </button>
     </mat-sidenav-content>
 </mat-sidenav-container>

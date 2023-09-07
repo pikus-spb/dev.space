@@ -6,11 +6,11 @@
 }
 
 :host {
-  .main-menu-container {
+  mat-sidenav {
     width: @mainMenuWidth;
     padding: @defaultPadding;
 
-    button, a {
+    a {
       width: calc(@mainMenuWidth - 2 * @defaultPadding - @defaultBorderWidth);
       justify-content: flex-start;
       margin: 5px 0;
@@ -22,9 +22,19 @@
         padding-left: 17px;
       }
     }
+
+    button[mat-icon-button] {
+      position: absolute;
+      bottom: 10px;
+    }
   }
 
-  .main-container {
+  mat-sidenav-content {
     padding: @defaultPadding;
+
+    button[mat-icon-button] {
+      position: absolute;
+      bottom: 10px;
+    }
   }
 }
