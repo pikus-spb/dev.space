@@ -1,8 +1,12 @@
+<header>
+    <button mat-icon-button (click)="sidenav.toggle()" title="Toggle menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <img src="assets/images/angular.png"> <h1>Pikus-dev.space</h1>
+</header>
 <mat-sidenav-container>
     <mat-sidenav #sidenav opened mode="side">
-        <button mat-icon-button (click)="sidenav.close()" [hidden]="!sidenav.opened" title="Close menu">
-            <mat-icon>arrow_left</mat-icon>
-        </button>
         <a mat-button routerLink="/home" routerLinkActive="active">
             <mat-icon>home</mat-icon>
             Home
@@ -18,8 +22,5 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <router-outlet></router-outlet>
-        <button mat-icon-button (click)="sidenav.open()" [hidden]="sidenav.opened" title="Open menu">
-            <mat-icon>menu</mat-icon>
-        </button>
     </mat-sidenav-content>
 </mat-sidenav-container>
