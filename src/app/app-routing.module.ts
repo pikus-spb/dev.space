@@ -1,14 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LinksComponent } from './links/links.component';
-import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'links', component: LinksComponent },
-  { path: 'about', component: AboutComponent },
-  { path: '**', redirectTo: 'home' },
+  {
+    path: 'home',
+    loadComponent() {
+      return import('./home/home.component').then((imported) => imported.HomeComponent);
+    }
+  },
+  {
+    path: 'links',
+    loadComponent() {
+      return import('./links/links.component').then((imported) => imported.LinksComponent);
+    }
+  },
+  {
+    path: 'about',
+    loadComponent() {
+      return import('./about/about.component').then((imported) => imported.AboutComponent);
+    }
+  },
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

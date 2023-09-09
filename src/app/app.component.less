@@ -1,17 +1,13 @@
 @import "globals";
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 
-  header {
-    width: 100%;
+  mat-toolbar {
     height: @headerHeight;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: @defaultPadding;
-    gap: @defaultPadding;
+    gap: 10px;
 
     img {
       width: 2rem;
@@ -31,7 +27,6 @@
     mat-sidenav {
       width: @mainMenuWidth;
       padding: @defaultPadding * 0.6;
-      border-right: 0;
 
       a {
         width: 100%;

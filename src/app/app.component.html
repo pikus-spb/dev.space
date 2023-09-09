@@ -1,10 +1,10 @@
-<header>
+<mat-toolbar color="primary">
     <button mat-icon-button (click)="sidenav.toggle()" title="Toggle menu">
         <mat-icon>menu</mat-icon>
     </button>
-
     <img src="assets/images/angular.png"> <h1>Pikus-dev.space</h1>
-</header>
+</mat-toolbar>
+<mat-progress-bar mode="indeterminate" [style.visibility]="loading ? 'visible' : 'hidden'"></mat-progress-bar>
 <mat-sidenav-container>
     <mat-sidenav #sidenav opened mode="side">
         <a mat-button routerLink="/home" routerLinkActive="active">
