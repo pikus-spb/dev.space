@@ -20,6 +20,11 @@
     }
   }
 
+  mat-progress-bar {
+    position: absolute;
+    top: @headerHeight;
+  }
+
   mat-sidenav-container {
     height: calc(100% - @headerHeight);
     background-color: initial;
@@ -27,6 +32,7 @@
     mat-sidenav {
       width: @mainMenuWidth;
       padding: @defaultPadding * 0.6;
+      background-color: transparent;
 
       a {
         width: 100%;
