@@ -1,5 +1,9 @@
 <ng-container>
-    <button mat-icon-button (click)="onMenuClick.emit()" title="Toggle menu">
+    <button mat-icon-button
+            matTooltip="Toggle main menu"
+            matTooltipPosition="below"
+            matTooltipShowDelay="1500"
+            (click)="onMenuClick.emit()">
         <mat-icon>menu</mat-icon>
     </button>
     <img src="assets/images/angular.png"> <h1>Pikus-dev.space</h1>
