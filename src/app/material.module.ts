@@ -17,7 +17,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatToolbarModule,
     MatProgressBarModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
   ],
   exports: [
     MatSidenavModule,

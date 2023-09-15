@@ -1,0 +1,26 @@
+@import './../../globals';
+:host {
+  font-size: 1rem;
+
+  mat-card-content {
+    font-size: 0.9rem;
+    padding: 2 * @defaultPadding 0 0 0 !important;
+    display: block;
+    width: 100%;
+
+    section {
+      width: 100%;
+
+      p {
+        line-height: 0.9rem;
+
+        label {
+          display: inline-block;
+          width: 50%;
+          margin-right: @defaultPadding;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
