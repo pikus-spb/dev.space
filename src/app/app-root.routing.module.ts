@@ -5,8 +5,8 @@ const routes: Route[] = [
   {
     path: 'widgets',
     loadComponent() {
-      return import('./widgets/widgets-standalone.component')
-          .then((imported) => imported.WidgetsStandaloneComponent);
+      return import('./widgets/widgets.component')
+          .then((imported) => imported.WidgetsComponent);
     },
   },
   {

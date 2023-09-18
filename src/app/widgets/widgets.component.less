@@ -1,18 +1,51 @@
 @import './../globals';
 
+/* When showing on mobile */
+@media only screen and (max-width: 1024px) {
+  ::ng-deep {
+    section {
+      flex-direction: column !important;
+      padding-top: 0 !important;
+      gap: @defaultPadding !important;
+
+      .widget {
+        width: 300px !important;
+
+        mat-card {
+          min-height: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+/* When showing at home page */
+::ng-deep p {
+  widgets {
+    section {
+      justify-content: left !important;
+
+      .widget {
+        min-width: 300px !important;
+      }
+    }
+  }
+}
+
 section {
-  margin-top: calc(@defaultPadding * 2);
+  height: 100%;
+  padding-top: calc(2 * @defaultPadding);
   display: flex;
   flex-direction: row;
-  gap: @defaultPadding;
-  justify-content: left;
+  gap: calc(2 * @defaultPadding);
+  justify-content: center;
+  align-items: center;
 
   .widget {
     min-width: 310px;
-    min-height: 310px;
 
     ::ng-deep mat-card {
-      height: 100%;
+      min-height: 280px;
 
       mat-card-content {
         padding: calc(@defaultPadding * 2);
