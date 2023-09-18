@@ -3,16 +3,18 @@
 /* When showing on mobile */
 @media only screen and (max-width: 1024px) {
   ::ng-deep {
-    section {
-      flex-direction: column !important;
-      padding-top: 0 !important;
-      gap: @defaultPadding !important;
+    widgets {
+      section.widget-container {
+        flex-direction: column;
+        padding-top: 0;
+        gap: @defaultPadding;
 
-      .widget {
-        width: 300px !important;
+        .widget {
+          width: 300px;
 
-        mat-card {
-          min-height: 0 !important;
+          mat-card {
+            min-height: 0 !important;
+          }
         }
       }
     }
@@ -20,13 +22,13 @@
 }
 
 /* When showing at home page */
-::ng-deep p {
+::ng-deep div.home p {
   widgets {
     section {
-      justify-content: left !important;
+      justify-content: left;
 
       .widget {
-        min-width: 300px !important;
+        min-width: 300px;
       }
     }
   }
