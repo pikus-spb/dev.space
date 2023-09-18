@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.component.less'],
   standalone: true,
-  imports: [ RouterModule, MaterialModule ]
+  imports: [RouterModule, MaterialModule],
 })
-export class MainMenuComponent {
-
-}
+export class MainMenuComponent {}

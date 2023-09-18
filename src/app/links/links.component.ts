@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-links',
   templateUrl: './links.component.html',
   styleUrls: ['./links.component.less'],
-  standalone: true
+  standalone: true,
 })
-export class LinksComponent {
-
-}
+export class LinksComponent {}

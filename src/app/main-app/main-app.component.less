@@ -1,4 +1,4 @@
-@import "./../globals";
+@import './../globals';
 
 :host {
   display: flex;
@@ -11,13 +11,13 @@
   }
 
   mat-sidenav-container {
-    height: calc(100% - @headerHeight);
     background-color: initial;
+    height: calc(100% - @headerHeight);
 
     mat-sidenav {
-      width: @mainMenuWidth;
-      padding: @defaultPadding * 0.6;
       background-color: transparent;
+      padding: @defaultPadding * 0.6;
+      width: @mainMenuWidth;
     }
 
     mat-sidenav-content {

@@ -6,8 +6,8 @@ import { MaterialModule } from '../material.module';
   templateUrl: './main-header.component.html',
   styleUrls: ['./main-header.component.less'],
   standalone: true,
-  imports: [ MaterialModule ]
+  imports: [MaterialModule],
 })
 export class MainHeaderComponent {
-  @Output() onMenuClick = new EventEmitter<void>();
+  @Output() menuClick = new EventEmitter<void>();
 }

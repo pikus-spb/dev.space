@@ -18,7 +18,7 @@ import { MatCardModule } from '@angular/material/card';
     MatProgressBarModule,
     MatListModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
   ],
   exports: [
     CommonModule,
@@ -29,7 +29,7 @@ import { MatCardModule } from '@angular/material/card';
     MatProgressBarModule,
     MatListModule,
     MatTooltipModule,
-    MatCardModule
-  ]
+    MatCardModule,
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}

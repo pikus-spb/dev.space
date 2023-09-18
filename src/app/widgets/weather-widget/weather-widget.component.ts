@@ -5,7 +5,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../material.module';
 
-const ROSCHINO_LONGITUDE = 29.603100;
+const ROSCHINO_LONGITUDE = 29.6031;
 const ROSCHINO_LATITUDE = 60.256511;
 const WEATHER_API_URL = `https://api.open-meteo.com/v1/forecast?latitude=${ROSCHINO_LATITUDE}&longitude=${ROSCHINO_LONGITUDE}&current_weather=true`;
 const WEATHER_CODE_DESCRIPTION = Object.values({
@@ -28,29 +28,31 @@ const WEATHER_CODE_DESCRIPTION = Object.values({
   16: 'Осадки в пределах видимости, достигающие земли вблизи, но не на ней',
   17: 'Гроза, но без осадков',
   18: 'Шквалы в пределах видимости в течение текущего часа',
-  19: 'Воронкообразные облака'
+  19: 'Воронкообразные облака',
 });
 @Component({
   selector: 'weather-widget',
   templateUrl: './weather-widget.component.html',
   styleUrls: ['./weather-widget.component.less'],
-  imports: [ MaterialModule, HttpClientModule, CommonModule ],
-  standalone: true
+  imports: [MaterialModule, HttpClientModule, CommonModule],
+  standalone: true,
 })
 export class WeatherWidgetComponent {
   temperature: Subject<number> = new Subject();
   temperatureDescription: Subject<string> = new Subject();
 
   constructor(http: HttpClient) {
-    http.get(WEATHER_API_URL)
+    http
+      .get(WEATHER_API_URL)
       .pipe(
-          takeUntilDestroyed(),
-          tap((data: any) => {
-            this.temperature.next(data.current_weather.temperature);
-            this.temperatureDescription.next(WEATHER_CODE_DESCRIPTION[data.current_weather.weathercode]);
-          })
+        takeUntilDestroyed(),
+        tap((data: any) => {
+          this.temperature.next(data.current_weather.temperature);
+          this.temperatureDescription.next(
+            WEATHER_CODE_DESCRIPTION[data.current_weather.weathercode]
+          );
+        })
       )
       .subscribe();
   }
-
 }

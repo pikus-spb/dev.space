@@ -7,7 +7,7 @@ import { HoursPipe } from './hours.pipe';
 import { MinutesPipe } from './minutes.pipe';
 import { MaterialModule } from '../../material.module';
 
-const ROSCHINO_LONGITUDE = 29.603100;
+const ROSCHINO_LONGITUDE = 29.6031;
 const ROSCHINO_LATITUDE = 60.256511;
 const WEATHER_API_URL = `https://api.bf5.ru/sun?lat=${ROSCHINO_LATITUDE}&lon=${ROSCHINO_LONGITUDE}`;
 
@@ -15,8 +15,8 @@ const WEATHER_API_URL = `https://api.bf5.ru/sun?lat=${ROSCHINO_LATITUDE}&lon=${R
   selector: 'daylight-widget',
   templateUrl: './daylight-widget.component.html',
   styleUrls: ['./daylight-widget.component.less'],
-  imports: [ CommonModule, MaterialModule, HoursPipe, MinutesPipe ],
-  standalone: true
+  imports: [CommonModule, MaterialModule, HoursPipe, MinutesPipe],
+  standalone: true,
 })
 export class DaylightWidgetComponent {
   longitude: Subject<string> = new Subject();
@@ -24,15 +24,16 @@ export class DaylightWidgetComponent {
   sunset: Subject<string> = new Subject();
 
   constructor(http: HttpClient) {
-    http.get(WEATHER_API_URL)
-        .pipe(
-            takeUntilDestroyed(),
-            tap((data: any) => {
-              this.longitude.next(data.longitude);
-              this.sunrise.next(data.sunrise);
-              this.sunset.next(data.sunset);
-            })
-        )
-        .subscribe();
+    http
+      .get(WEATHER_API_URL)
+      .pipe(
+        takeUntilDestroyed(),
+        tap((data: any) => {
+          this.longitude.next(data.longitude);
+          this.sunrise.next(data.sunrise);
+          this.sunset.next(data.sunset);
+        })
+      )
+      .subscribe();
   }
 }

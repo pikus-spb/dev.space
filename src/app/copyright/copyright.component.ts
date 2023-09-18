@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'copyright',
   templateUrl: './copyright.component.html',
   styleUrls: ['./copyright.component.less'],
-  standalone: true
+  standalone: true,
 })
-export class CopyrightComponent {
-}
+export class CopyrightComponent {}

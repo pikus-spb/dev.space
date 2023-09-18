@@ -6,8 +6,8 @@
     widgets {
       section.widget-container {
         flex-direction: column;
-        padding-top: 0;
         gap: @defaultPadding;
+        padding-top: 0;
 
         .widget {
           width: 300px;
@@ -35,13 +35,13 @@
 }
 
 section {
-  height: 100%;
-  padding-top: calc(2 * @defaultPadding);
   display: flex;
   flex-direction: row;
   gap: calc(2 * @defaultPadding);
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-top: calc(2 * @defaultPadding);
+  height: 100%;
 
   .widget {
     min-width: 310px;
@@ -50,10 +50,10 @@ section {
       min-height: 280px;
 
       mat-card-content {
-        padding: calc(@defaultPadding * 2);
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: calc(@defaultPadding * 2);
       }
     }
   }

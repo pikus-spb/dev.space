@@ -12,10 +12,8 @@ import { MaterialModule } from '../material.module';
     MaterialModule,
     WeatherWidgetComponent,
     CurrencyWidgetComponent,
-    DaylightWidgetComponent
+    DaylightWidgetComponent,
   ],
-  standalone: true
+  standalone: true,
 })
-export class WidgetsComponent {
-
-}
+export class WidgetsComponent {}

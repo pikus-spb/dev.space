@@ -1,17 +1,18 @@
-@import "./../globals";
+@import './../globals';
+
 :host {
   mat-nav-list {
     a {
       border-left: 3px solid transparent;
 
       &.active {
-        background-color: @defaultHighlightColor;
         border-left-color: gray;
+        background-color: @defaultHighlightColor;
       }
 
       mat-icon {
-        vertical-align: bottom;
         margin-right: 1rem;
+        vertical-align: bottom;
       }
     }
   }

@@ -7,16 +7,14 @@ import { AppRootComponent } from './app-root.component';
 import { AppRoutingModule } from './app-root.routing.module';
 
 @NgModule({
-  declarations: [
-    AppRootComponent,
-  ],
+  declarations: [AppRootComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppRootComponent]
+  bootstrap: [AppRootComponent],
 })
-export class AppRootModule { }
+export class AppRootModule {}
