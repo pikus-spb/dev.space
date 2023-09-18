@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Subject, tap } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../../material.module';
 
 const ROSCHINO_LONGITUDE = 29.603100;
 const ROSCHINO_LATITUDE = 60.256511;
@@ -35,7 +34,7 @@ const WEATHER_CODE_DESCRIPTION = Object.values({
   selector: 'weather-widget',
   templateUrl: './weather-widget.component.html',
   styleUrls: ['./weather-widget.component.less'],
-  imports: [ MatCardModule, MatIconModule, HttpClientModule, CommonModule ],
+  imports: [ MaterialModule, HttpClientModule, CommonModule ],
   standalone: true
 })
 export class WeatherWidgetComponent {

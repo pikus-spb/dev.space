@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
 import { HttpClient } from '@angular/common/http';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, tap } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../../material.module';
 
 @Component({
   selector: 'currency-widget',
   templateUrl: './currency-widget.component.html',
   styleUrls: ['./currency-widget.component.less'],
-  imports: [ CommonModule, MatCardModule, MatIconModule ],
+  imports: [ CommonModule, MaterialModule ],
   standalone: true
 })
 export class CurrencyWidgetComponent {

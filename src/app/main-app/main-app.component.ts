@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router, RouterModule } from '@angular/router';
 import { filter, tap } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MaterialModule } from '../material.module';
+import { MainHeaderComponent } from '../main-header/main-header.component';
+import { MainMenuComponent } from '../main-menu/main-menu.component';
+import { CopyrightComponent } from '../copyright/copyright.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  selector: 'main-app',
+  templateUrl: './main-app.component.html',
+  styleUrls: ['./main-app.component.less'],
+  imports: [ MaterialModule, MainHeaderComponent, MainMenuComponent, RouterModule, CopyrightComponent ],
+  standalone: true
 })
-export class AppComponent {
+export class MainAppComponent {
   loading = false;
 
   constructor(private router: Router) {

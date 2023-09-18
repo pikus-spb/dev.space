@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 import { HttpClient } from '@angular/common/http';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, tap } from 'rxjs';
-import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { HoursPipe } from './hours.pipe';
 import { MinutesPipe } from './minutes.pipe';
+import { MaterialModule } from '../../material.module';
 
 const ROSCHINO_LONGITUDE = 29.603100;
 const ROSCHINO_LATITUDE = 60.256511;
@@ -16,7 +15,7 @@ const WEATHER_API_URL = `https://api.bf5.ru/sun?lat=${ROSCHINO_LATITUDE}&lon=${R
   selector: 'daylight-widget',
   templateUrl: './daylight-widget.component.html',
   styleUrls: ['./daylight-widget.component.less'],
-  imports: [ CommonModule, MatCardModule, MatIconModule, HoursPipe, MinutesPipe ],
+  imports: [ CommonModule, MaterialModule, HoursPipe, MinutesPipe ],
   standalone: true
 })
 export class DaylightWidgetComponent {

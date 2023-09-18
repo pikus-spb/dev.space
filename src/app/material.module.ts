@@ -6,8 +6,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
-
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   imports: [
@@ -18,15 +18,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatProgressBarModule,
     MatListModule,
     MatTooltipModule,
+    MatCardModule
   ],
   exports: [
+    CommonModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
     MatProgressBarModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }
