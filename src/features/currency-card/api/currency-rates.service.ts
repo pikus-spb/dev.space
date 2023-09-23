@@ -1,18 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-
-export interface CurrencyRates {
-  eur: string;
-  usd: string;
-}
-
-interface CurrencyData {
-  rates: {
-    EUR: number;
-    USD: number;
-  };
-}
+import { CurrencyRequest, CurrencyUI } from '../model/currency';
+import { CurrencyMapper } from './mappers/currency-mapper.service';
 
 const API_URL = 'https://www.cbr-xml-daily.ru/latest.js';
 
@@ -20,18 +10,14 @@ const API_URL = 'https://www.cbr-xml-daily.ru/latest.js';
   providedIn: 'root',
 })
 export class CurrencyRatesService {
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private mapper: CurrencyMapper
+  ) {}
 
-  get(): Observable<CurrencyRates> {
+  get(): Observable<CurrencyUI> {
     return this.http
-      .get<CurrencyData>(API_URL)
-      .pipe(map((data: CurrencyData) => this.map(data)));
-  }
-
-  private map(data: CurrencyData): CurrencyRates {
-    return {
-      eur: (1 / data.rates.EUR).toFixed(2),
-      usd: (1 / data.rates.USD).toFixed(2),
-    } as CurrencyRates;
+      .get<CurrencyRequest>(API_URL)
+      .pipe(map((data: CurrencyRequest) => this.mapper.toUI(data)));
   }
 }

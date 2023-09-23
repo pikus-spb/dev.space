@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from 'src/shared/material/ui/material.module';
+import { MaterialModule } from 'src/shared/ui';
 
 @Component({
   selector: 'main-menu',

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { MaterialModule } from 'src/shared/material/ui/material.module';
+import { MaterialModule } from 'src/shared/ui';
 
 @Component({
   selector: 'main-header',

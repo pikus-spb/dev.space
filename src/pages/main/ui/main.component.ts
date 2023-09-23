@@ -7,10 +7,10 @@ import {
   RouterModule,
 } from '@angular/router';
 import { filter, tap } from 'rxjs';
+import { MainHeaderComponent } from 'src/widgets/main-header';
 import { MainMenuComponent } from 'src/widgets/main-menu';
-import { CopyrightComponent } from 'src/shared/copyright';
-import { MainHeaderComponent } from 'src/shared/main-header';
-import { MaterialModule } from 'src/shared/material';
+import { CopyrightComponent } from 'src/entities/copyright';
+import { MaterialModule } from 'src/shared/ui';
 
 @Component({
   selector: 'main',

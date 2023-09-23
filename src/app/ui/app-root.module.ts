@@ -1,11 +1,11 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from 'src/shared/material/ui/material.module';
+
+import { MaterialModule } from 'src/shared/ui';
+import { AppRoutingModule } from '../routing/root.routing.module';
 import { RootComponent } from './root.component';
-import { AppRoutingModule } from './root.routing.module';
 
 @NgModule({
   declarations: [RootComponent],
@@ -19,4 +19,4 @@ import { AppRoutingModule } from './root.routing.module';
   providers: [],
   bootstrap: [RootComponent],
 })
-export class RootModule {}
+export class AppRootModule {}

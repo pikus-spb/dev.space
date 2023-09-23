@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, tap } from 'rxjs';
-import { MaterialModule } from 'src/shared/material/ui/material.module';
-import {
-  CurrencyRates,
-  CurrencyRatesService,
-} from '../api/currency-rates.service';
+
+import { MaterialModule } from 'src/shared/ui';
+
+import { CurrencyRatesService } from '../api/currency-rates.service';
+import { CurrencyUI } from '../model/currency';
 
 @Component({
   selector: 'currency-card',
@@ -24,7 +24,7 @@ export class CurrencyCardComponent {
       .get()
       .pipe(
         takeUntilDestroyed(),
-        tap((data: CurrencyRates) => {
+        tap((data: CurrencyUI) => {
           this.eurRate.next(data.eur);
           this.usdRate.next(data.usd);
         })

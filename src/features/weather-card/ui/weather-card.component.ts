@@ -2,9 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, tap } from 'rxjs';
-import { WeatherCodeDescriptionPipe } from 'src/entities/pipes';
-import { MaterialModule } from 'src/shared/material';
-import { Weather, WeatherService } from '../api/weather.service';
+
+import { WeatherCodeDescriptionPipe } from 'src/shared/pipes';
+import { MaterialModule } from 'src/shared/ui';
+
+import { WeatherService } from '../api/weather.service';
+import { WeatherUI } from '../model/weather';
 
 @Component({
   selector: 'weather-card',
@@ -21,7 +24,7 @@ export class WeatherCardComponent {
       .get()
       .pipe(
         takeUntilDestroyed(),
-        tap((data: Weather) => {
+        tap((data: WeatherUI) => {
           this.temperature.next(data.temperature);
           this.weatherCode.next(data.code);
         })

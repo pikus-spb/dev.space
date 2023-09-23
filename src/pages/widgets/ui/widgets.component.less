@@ -1,15 +1,15 @@
 @import 'src/app/styles/root';
 
 /* When showing on mobile */
-@media only screen and (max-width: 1024px) {
+@media only all and (max-width: 1024px) {
   ::ng-deep {
-    cards {
-      section.cards-container {
+    widgets {
+      main.widget-container {
         flex-direction: column;
         gap: @defaultPadding;
         padding-top: 0;
 
-        .card {
+        .widget {
           width: 300px;
 
           mat-card {
@@ -21,17 +21,17 @@
   }
 }
 
-section {
+main {
   display: flex;
   flex-direction: row;
   gap: calc(2 * @defaultPadding);
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   padding-top: calc(2 * @defaultPadding);
   height: 100%;
 
-  .card {
-    min-width: 300px;
+  .widget {
+    min-width: 310px;
 
     ::ng-deep mat-card {
       min-height: 280px;

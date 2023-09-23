@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, tap } from 'rxjs';
-import { HoursPipe } from 'src/entities/pipes/ui/hours.pipe';
-import { MinutesPipe } from 'src/entities/pipes/ui/minutes.pipe';
-import { MaterialModule } from 'src/shared/material/ui/material.module';
-import { DaylightData, DaylightService } from '../api/daylight.service';
+
+import { HoursPipe, MinutesPipe } from 'src/shared/pipes';
+import { MaterialModule } from 'src/shared/ui';
+
+import { DaylightService } from '../api/daylight.service';
+import { Daylight } from '../model/daylight';
 
 @Component({
   selector: 'daylight-card',
@@ -24,7 +26,7 @@ export class DaylightCardComponent {
       .get()
       .pipe(
         takeUntilDestroyed(),
-        tap((data: DaylightData) => {
+        tap((data: Daylight) => {
           this.longitude.next(data.longitude);
           this.sunrise.next(data.sunrise);
           this.sunset.next(data.sunset);

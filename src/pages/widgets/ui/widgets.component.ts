@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+
 import { CurrencyCardComponent } from 'src/features/currency-card';
 import { DaylightCardComponent } from 'src/features/daylight-card';
 import { WeatherCardComponent } from 'src/features/weather-card';
 import { MaterialModule } from 'src/shared/ui';
 
 @Component({
-  selector: 'cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.less'],
+  selector: 'widgets',
+  templateUrl: './widgets.component.html',
+  styleUrls: ['./widgets.component.less'],
   imports: [
     MaterialModule,
     WeatherCardComponent,
@@ -16,4 +17,4 @@ import { MaterialModule } from 'src/shared/ui';
   ],
   standalone: true,
 })
-export class CardsComponent {}
+export class WidgetsComponent {}

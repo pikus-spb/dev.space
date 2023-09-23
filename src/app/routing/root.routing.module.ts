@@ -5,15 +5,15 @@ const routes: Route[] = [
   {
     path: 'widgets',
     loadComponent() {
-      return import('src/widgets/cards').then(
-        imported => imported.CardsComponent
+      return import('src/pages/widgets').then(
+        imported => imported.WidgetsComponent
       );
     },
   },
   {
     path: '',
     loadComponent() {
-      return import('src/app/main').then(imported => imported.MainComponent);
+      return import('src/pages/main').then(imported => imported.MainComponent);
     },
     children: [
       {
