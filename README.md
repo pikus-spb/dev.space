@@ -1,7 +1,8 @@
 # PikusDevSpace
 
-This is a demo project for `https://pikus-dev.space` that implements canonical FSD - feature sliced design.
-`#fsd #featuresliceddesign`
+This is a demo project for `https://pikus-dev.space` written using `Angular Material` and that implements
+canonical `FSD - feature sliced design`
+#fsd #featuresliceddesign
 
 ## Development server
 
