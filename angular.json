@@ -35,6 +35,7 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/shared/assets/images/favicon.ico",
+              "src/entities/links/api/links.json",
               "src/shared/assets"
             ],
             "styles": [
@@ -99,6 +100,7 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/shared/assets/images/favicon.ico",
+              "src/entities/links/api/links.json",
               "src/shared/assets"
             ],
             "styles": [
