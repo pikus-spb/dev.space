@@ -203,12 +203,6 @@
         "link": "/watch?v=xzxHRzUPaP8",
         "title": "Hot vs cold Observable",
         "description": "Multicast vs Unicast in Angular"
-      },
-      {
-        "server": "https://www.youtube.com",
-        "link": "/watch?v=bV8emCBmFHk&list=PLC3y8-rFHvwilEuCqFGTL5Gt5U6deIrsU",
-        "title": "Understanding RxJS",
-        "description": "базовый курс по RxJs"
       }
     ]
   },
