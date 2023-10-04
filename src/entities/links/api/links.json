@@ -318,12 +318,6 @@
       },
       {
         "host": "https://www.youtube.com",
-        "link": "/watch?v=P2Ny05sAYoY",
-        "title": "Union типы и TypeGuards",
-        "description": ""
-      },
-      {
-        "host": "https://www.youtube.com",
         "link": "/watch?v=O6A-u_FoEX8",
         "title": "The Magic of TypeScript Decorators",
         "description": "О декораторах в TypeScript"
