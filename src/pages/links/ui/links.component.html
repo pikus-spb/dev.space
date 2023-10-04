@@ -32,13 +32,13 @@
   <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ section.sectionName }}
+        {{ section.name }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of section.children">
-        <img *ngIf="link.server" src="{{ link.server }}/favicon.ico" />
-        <a target="_blank" [attr.href]="link.server + link.link">{{
+        <img *ngIf="link.host" src="{{ link.host }}/favicon.ico" />
+        <a target="_blank" [attr.href]="link.host + link.link">{{
           link.title
         }}</a>
         <ng-container *ngIf="link.description">

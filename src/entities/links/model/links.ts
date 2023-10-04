@@ -1,12 +1,12 @@
 interface Link {
-  server: string;
+  host: string;
   link: string;
   title: string;
   description: string;
 }
 
 interface LinkSection {
-  sectionName: string;
+  name: string;
   children: Link[];
 }
 

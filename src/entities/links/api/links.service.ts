@@ -13,7 +13,7 @@ export class LinksService {
     return this.http.get<Links>('/entities/links/api/links.json').pipe(
       map((links: Links) => {
         return links.sort((sectionA, sectionB) => {
-          return sectionA.sectionName.localeCompare(sectionB.sectionName);
+          return sectionA.name.localeCompare(sectionB.name);
         });
       })
     );
