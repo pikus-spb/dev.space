@@ -6,7 +6,7 @@
         "server": "https://www.youtube.com",
         "link": "/watch?v=bV8emCBmFHk&list=PLC3y8-rFHvwilEuCqFGTL5Gt5U6deIrsU",
         "title": "Angular Material course",
-        "description": "курс по компонентам Angular Material (англ.)"
+        "description": "курс по компонентам Angular Material"
       },
       {
         "server": "https://www.youtube.com",
@@ -18,13 +18,13 @@
         "server": "https://www.youtube.com",
         "link": "/watch?v=tA9tuKbg5Yk",
         "title": "Dependency Injection",
-        "description": "Подронее о системе DI в Angular от Angular University (англ.)"
+        "description": "Подронее о системе DI в Angular от Angular University"
       },
       {
         "server": "https://www.youtube.com",
         "link": "/watch?v=nMD-alhL4r8",
         "title": "Angular dependency injection in depth – View Providers",
-        "description": "подробнее о view providers от Дмитрия Меженского - Decoded Frontend (англ.)"
+        "description": "подробнее о view providers от Дмитрия Меженского - Decoded Frontend"
       },
       {
         "server": "https://www.youtube.com",
@@ -42,7 +42,7 @@
         "server": "https://www.youtube.com",
         "link": "/watch?v=9RvoyFXHhT4",
         "title": "Angular Standalone Components",
-        "description": "новая фича в Angular 14 (англ.)"
+        "description": "новая фича в Angular 14"
       },
       {
         "server": "https://www.youtube.com",
@@ -155,7 +155,7 @@
         "server": "https://www.youtube.com",
         "link": "/playlist?list=PLV-DQnYj14bRFWMmuT6ptSL4v5fxMJnOS",
         "title": "NgRx course",
-        "description": "курс по NgRx (англ.)"
+        "description": "курс по NgRx"
       },
       {
         "server": "https://www.youtube.com",
@@ -172,7 +172,7 @@
         "server": "https://www.youtube.com",
         "link": "/playlist?list=PL55RiY5tL51pHpagYcrN9ubNLVXF8rGVi",
         "title": "Understanding RxJS",
-        "description": "базовый курс по RxJs (англ.)"
+        "description": "базовый курс по RxJs"
       },
       {
         "server": "https://www.youtube.com",
@@ -208,7 +208,7 @@
         "server": "https://www.youtube.com",
         "link": "/watch?v=bV8emCBmFHk&list=PLC3y8-rFHvwilEuCqFGTL5Gt5U6deIrsU",
         "title": "Understanding RxJS",
-        "description": "базовый курс по RxJs (англ.)"
+        "description": "базовый курс по RxJs"
       }
     ]
   },
@@ -372,7 +372,7 @@
         "server": "https://www.youtube.com",
         "link": "/watch?v=TwPcU7Zu3nI",
         "title": "Bridge Design Pattern",
-        "description": "Bridge Design Pattern в исходниках Angular (англ.)"
+        "description": "Bridge Design Pattern в исходниках Angular"
       }
     ]
   },
