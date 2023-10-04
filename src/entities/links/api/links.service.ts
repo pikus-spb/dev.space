@@ -10,12 +10,14 @@ export class LinksService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<Links> {
-    return this.http.get<Links>('/entities/links/api/links.json').pipe(
-      map((links: Links) => {
-        return links.sort((sectionA, sectionB) => {
-          return sectionA.name.localeCompare(sectionB.name);
-        });
-      })
-    );
+    return this.http
+      .get<Links>('/entities/links/api/links.json')
+      .pipe(map(this.sortBySectionName));
+  }
+
+  private sortBySectionName(links: Links): Links {
+    return links.sort((sectionA, sectionB) => {
+      return sectionA.name.localeCompare(sectionB.name);
+    });
   }
 }
