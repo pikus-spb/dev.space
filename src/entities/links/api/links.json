@@ -106,6 +106,24 @@
       },
       {
         "host": "https://www.youtube.com",
+        "link": "/watch?v=07CaGlbMPbw",
+        "title": "Structural Directives in Angular",
+        "description": " How to Create Custom Directive"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=zpVVHI21TAo",
+        "title": "Structural Directives in Angular",
+        "description": "Working with Context (Advanced)"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=fsGzxyHi6yY",
+        "title": "Structural Directives in Angular",
+        "description": "How to Make It Strict (In-Depth)"
+      },
+      {
+        "host": "https://www.youtube.com",
         "link": "/watch?v=Kba2joUhcpg",
         "title": "Change Detection, Immutability, OnPush Strategy in Angular",
         "description": ""
