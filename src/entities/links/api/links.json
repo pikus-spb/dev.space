@@ -368,6 +368,12 @@
         "link": "/watch?v=dtjULd469Ng",
         "title": "Feature-Sliced Design",
         "description": "воркшоп от одного мз разрабочиков FSD, Ильи Азина"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=m1NTKbHwNJk",
+        "title": "Monorepo and NX",
+        "description": "Mastering NX Angular Monorepo: Simplify Development and Boost Productivity"
       }
     ]
   },
