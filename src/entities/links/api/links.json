@@ -163,6 +163,12 @@
         "link": "/watch?v=tpSwvVYViRI",
         "title": "Angular directive composition API",
         "description": "паттерн композиция директив в Angular. Как сделать код более переиспользуемым"
+      },
+      {
+        "host": "https://habr.com",
+        "link": "/ru/articles/661213/",
+        "title": "exportAs в Angular",
+        "description": "О маленькой полезной фиче exportAs"
       }
     ]
   },
@@ -380,6 +386,12 @@
         "link": "/watch?v=ZQClCNPq7AI",
         "title": "МИКРОФРОНТЕНДы",
         "description": "Что такое МИКРОФРОНТЕНД за 10 минут"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=CBUkjUhKXSw",
+        "title": "DRY, KISS and YAGNI",
+        "description": "Три ключевых принципа хорошего кода DRY, KISS, YAGNI"
       }
     ]
   },
