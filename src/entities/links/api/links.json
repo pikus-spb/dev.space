@@ -345,6 +345,12 @@
         "link": "/watch?v=O6A-u_FoEX8",
         "title": "The Magic of TypeScript Decorators",
         "description": "О декораторах в TypeScript"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=dZWrIocSA1g",
+        "title": "Types VS interfaces",
+        "description": "Typescript Type vs Interface - Which One Is Better?"
       }
     ]
   },
