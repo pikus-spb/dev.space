@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 const WEATHER_CODES_DESCRIPTION = Object.freeze({
   0: 'Облачно',
-  1: 'Оболачность падает',
+  1: 'Облачность падает',
   2: 'Погодные явления без изменений',
   3: 'Облачность растет',
   4: 'Видимость снижается из-за дыма',

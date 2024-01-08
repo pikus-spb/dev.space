@@ -160,6 +160,12 @@
       },
       {
         "host": "https://www.youtube.com",
+        "link": "/watch?v=U9Xo0wXZIAg",
+        "title": "Angular Reactive Forms - All Needed Use Cases",
+        "description": "Еще один курс по реактивным формам в Angular"
+      },
+      {
+        "host": "https://www.youtube.com",
         "link": "/watch?v=tpSwvVYViRI",
         "title": "Angular directive composition API",
         "description": "паттерн композиция директив в Angular. Как сделать код более переиспользуемым"
@@ -169,6 +175,12 @@
         "link": "/ru/articles/661213/",
         "title": "exportAs в Angular",
         "description": "О маленькой полезной фиче exportAs"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=RLoACfLYwPs",
+        "title": "Signals in Angular 16",
+        "description": "Learn Angular Signals - The Future of State Management"
       }
     ]
   },
@@ -351,6 +363,35 @@
         "link": "/watch?v=dZWrIocSA1g",
         "title": "Types VS interfaces",
         "description": "Typescript Type vs Interface - Which One Is Better?"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=arZdL-b9zqQ",
+        "title": "Abstract classes VS interface",
+        "description": "Typescript Guide - Interfaces vs Abstract Classes?"
+      }
+    ]
+  },
+  {
+    "name": "Базовые знания, ООП",
+    "children": [
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=-6DWwR_R4Xk",
+        "title": "Концепция ООП",
+        "description": "ООП на простых примерах. Объектно-ориентированное программирование"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=4sxyDXt1igs",
+        "title": "Interface VS inheritance - what is best practice?",
+        "description": "Inheritance vs Interfaces: Object Oriented Programming"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=nnwD5Lwwqdo",
+        "title": "Composition Vs Inheritance",
+        "description": "Composition Vs Inheritance - Why You Should Stop Using Inheritance"
       }
     ]
   },
