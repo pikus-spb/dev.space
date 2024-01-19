@@ -473,6 +473,12 @@
         "link": "/watch?v=ybc2gkvjMDs",
         "title": "Intro to Figma for Developers",
         "description": "Немного о Figma"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=-Wlt8NRtOpo",
+        "title": "CSS Flexbox Course",
+        "description": "Немного о CSS Flex"
       }
     ]
   },
