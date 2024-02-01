@@ -239,6 +239,12 @@
         "link": "/watch?v=xzxHRzUPaP8",
         "title": "Hot vs cold Observable",
         "description": "Multicast vs Unicast in Angular"
+      },
+      {
+        "host": "https://habr.com",
+        "link": "/ru/articles/715882/",
+        "title": "Изучаем mergeMap, switchMap, concatMap и exhaustMap",
+        "description": "Подробнее о map* операторах"
       }
     ]
   },
@@ -262,6 +268,12 @@
         "link": "/watch?v=7wtbNNiOh30",
         "title": "Symbol тип",
         "description": "Генераторы. Symbol iterator, for of"
+      },
+      {
+        "host": "https://habr.com",
+        "link": "/ru/articles/681882/",
+        "title": "Задачи на собеседованиях. Event loop. JS",
+        "description": "Задачки на event loop"
       },
       {
         "host": "https://www.youtube.com",
@@ -513,6 +525,12 @@
         "link": "/trekhleb/javascript-algorithms",
         "title": "JavaScript Algorithms and Data Structures",
         "description": "Полная информация об алгоритмах и структурах данных с ссылками и примерами (GitHub)"
+      },
+      {
+        "host": "https://habr.com",
+        "link": "/ru/articles/444594/",
+        "title": "Big O",
+        "description": "Немного об определении 'О' большого для стандартных алгоритмов"
       }
     ]
   }
