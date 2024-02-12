@@ -451,6 +451,12 @@
         "link": "/watch?v=CBUkjUhKXSw",
         "title": "DRY, KISS and YAGNI",
         "description": "Три ключевых принципа хорошего кода DRY, KISS, YAGNI"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=pkHWttaktWk",
+        "title": "Атомарные SPA — Александр Китов, Альфа-Банк",
+        "description": "Сравнение микросервисной архитектуры с монолитом. Проблемы микросервисов и опыт их решения в Альфа-банке"
       }
     ]
   },
