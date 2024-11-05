@@ -497,6 +497,36 @@
         "link": "/watch?v=-Wlt8NRtOpo",
         "title": "CSS Flexbox Course",
         "description": "Немного о CSS Flex"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=GA65QBSec-Y&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb",
+        "title": "SASS Tutorial",
+        "description": "Полный курс о SCSS на примере постройки CSS библиотеки"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=Zz6eOVaaelI",
+        "title": "Learn Sass In 20 Minutes",
+        "description": "Краткий курс по SCSS (основные и популярные фишки)"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=MDQG6LSS8l8&list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY",
+        "title": "CSS Grid Tutorial",
+        "description": "Полный курс по CSS Grid"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=RhUuMl3R1PE",
+        "title": "CSS Grid Tutorial",
+        "description": "Более скажтый курс по CSS Grid (рекомендую)"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=EiNiSFIPIQE",
+        "title": "Learn CSS Grid - A 13 Minute Deep Dive",
+        "description": "Краткий и очень сжатый курс по CSS Grid (для повторения)"
       }
     ]
   },
