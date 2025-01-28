@@ -181,6 +181,12 @@
         "link": "/watch?v=RLoACfLYwPs",
         "title": "Signals in Angular 16",
         "description": "Learn Angular Signals - The Future of State Management"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=W7-lsoL-Gi8",
+        "title": "Angular Resource API - Everything You Have To Know ",
+        "description": "Подробно о resource API в Angular 19"
       }
     ]
   },
