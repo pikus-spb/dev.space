@@ -208,6 +208,23 @@
     ]
   },
   {
+    "name": "NX",
+    "children": [
+      {
+        "host": "https://www.youtube.com",
+        "link": "/playlist?list=PLakNactNC1dH38AfqmwabvOszDmKriGco",
+        "title": "Nx Workspaces Course (Free version) - By Nrwl",
+        "description": "Об основных возможностях NX workspaces"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/playlist?list=PLakNactNC1dFv24RzFKqEvRAVImmZpqzY",
+        "title": "Nx (monorepo development toolkit)",
+        "description": "Более подробный курс"
+      }
+    ]
+  },
+  {
     "name": "RxJs",
     "children": [
       {
