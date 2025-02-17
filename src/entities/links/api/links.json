@@ -204,6 +204,12 @@
         "link": "/watch?v=f97ICOaekNU",
         "title": "Angular NgRx Quick Start Tutorial",
         "description": ""
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/playlist?list=PLW2eQOsUPlWJRfWGOi9gZdc3rE4Fke0Wv",
+        "title": "NGRX Course: Store + Effects",
+        "description": ""
       }
     ]
   },
