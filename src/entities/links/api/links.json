@@ -191,6 +191,17 @@
     ]
   },
   {
+    "name": "Nest.js",
+    "children": [
+      {
+        "host": "https://habr.com",
+        "link": "/ru/articles/570886/",
+        "title": "NEST-NEXT: Best Practices — Часть 1",
+        "description": "Habr про Nest.js"
+      }
+    ]
+  },
+  {
     "name": "NgRx",
     "children": [
       {
