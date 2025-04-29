@@ -185,8 +185,14 @@
       {
         "host": "https://www.youtube.com",
         "link": "/watch?v=W7-lsoL-Gi8",
-        "title": "Angular Resource API - Everything You Have To Know ",
+        "title": "Angular Resource API - Everything You Have To Know",
         "description": "Подробно о resource API в Angular 19"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=U8YXaWwyd9k",
+        "title": "Input Signals in Angular",
+        "description": "Подробно о InputSignals в Angular"
       }
     ]
   },
