@@ -46,6 +46,12 @@
       },
       {
         "host": "https://www.youtube.com",
+        "link": "/watch?v=N8S2mPuGkgg",
+        "title": "Content Projection in Angular (beginners and advanced)",
+        "description": "Фича с неочевидным API для сложных случаев, может пригодиться"
+      },
+      {
+        "host": "https://www.youtube.com",
         "link": "/watch?v=suTtA0Hlwlk",
         "title": "Angular HTTP Interceptor",
         "description": ""
@@ -190,6 +196,18 @@
       },
       {
         "host": "https://www.youtube.com",
+        "link": "/watch?v=6IlTjqU_Tc0",
+        "title": "How To Detect Memory Leaks In Your Web App (2025)",
+        "description": "Определение и устранение утечек памяти в Angular"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=iBA2VLvqNr4",
+        "title": "Advanced Angular Patterns - Lightweight Injection Token",
+        "description": "Как повысить уровень tree shaking в Angular проекте и уменьшить размер банндла"
+      },
+      {
+        "host": "https://www.youtube.com",
         "link": "/watch?v=U8YXaWwyd9k",
         "title": "Input Signals in Angular",
         "description": "Подробно о InputSignals в Angular"
@@ -270,6 +288,12 @@
       },
       {
         "host": "https://www.youtube.com",
+        "link": "/watch?v=oKqcL-iMITY",
+        "title": "Hot vs Cold Observable in RxJs",
+        "description": "Хорошее обьяснение различий между горячими и холодными подписками в RxJS"
+      },
+      {
+        "host": "https://www.youtube.com",
         "link": "/watch?v=Byttv3YpjQk",
         "title": "I only ever use *these* RxJS operators to code reactively",
         "description": "основные операторы"
@@ -285,6 +309,24 @@
         "link": "/watch?v=xzxHRzUPaP8",
         "title": "Hot vs cold Observable",
         "description": "Multicast vs Unicast in Angular"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=OhuRvfcw3Tw",
+        "title": "TOP 6 Mistakes in RxJS code",
+        "description": "Частые ошибки в написании RxJS конструкций"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=qYdKmYp95Jg",
+        "title": "RxJs Operators - switchMap vs mergeMap",
+        "description": "Классное обьяснение разницы и принципов работы mergeMap и switchMap"
+      },
+      {
+        "host": "https://www.youtube.com",
+        "link": "/watch?v=nh13_aPRQ0Q",
+        "title": "RxJs Operators - ExhaustMap vs concatMap",
+        "description": "Классное обьяснение разницы и принципов работы ExhaustMap и concatMap"
       },
       {
         "host": "https://habr.com",
